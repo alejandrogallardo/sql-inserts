@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hola</title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <style>
+        .contenedor {
+            max-width: 1200px;
+            width: 90%;
+            background-color: #6f7799;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+        }
+        h1 {
+            font-family: 'Righteous', cursive;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .elementos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            border: none;
+            display: block;
+            padding: 7px 15px;
+            margin: 20px 0px; 
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: azure; 
+        }
+        .filas {
+            padding: 10px 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="contenedor">
+        <h1 class="text-center">SQL INSERTS</h1>
+        <p class="test"></p>
+        <div class="elementos">
+            <textarea name="texto" id="texto"></textarea> 
+            <button type="button" class="btn" id="" onclick="EvalStr()">Ejecutar</button>
+        </div>
+    </div>
+    
+    <div class="contenedor">
+        <p id="respuesta" class="text-center filas">Cantidad de filas creadas: 0</p>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
